@@ -1,5 +1,33 @@
 <html>
-<head><title>Benchmark Set</title></head>
+<head>
+<title>Benchmark Set</title>
+<style type="text/css">
+  h1 {
+    text-align: center;
+  }
+  button {
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+</style>
+<script>
+  function redirect(sender) {
+    location.href = sender.getAttribute("url");
+  }
+</script>
+</head>
 <body>
+<h1>Benchmardk Set</h1>
+<div>
+  <button onclick="redirect(this)" id="btn-threjs-shadowmap" url="./three.js/shadowmap/webgl_shadowmap.html">Three.js shadowmap</button>
+  <button onclick="redirect(this)" id="btn-threjs-performance" url="./three.js/performance/webgl-performance.html">Three.js performance</button>
+  <button onclick="redirect(this)" id="btn-cocos" url="./cocos/index.html">Cocos</button>
+  <button onclick="redirect(this)" id="btn-egret" url="./egret/index.html">Egret</button>
+  <button onclick="redirect(this)" id="btn-fishtank" url="./fishtank/index.html">Fishtank</button>
+  <button onclick="redirect(this)" id="btn-blink3d" url="./blink3d/index.html">Blink 3D</button>
+  <button onclick="redirect(this)" id="btn-heavy-bufferdata" url="./bufferdata/index.html">Heavy bufferdata</button>
+</div>
 </body>
 </html>
