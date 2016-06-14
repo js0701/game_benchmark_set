@@ -1,2 +1,2 @@
-# game_benchmark_set
+# Benchmark Set
 Benchmark set for gaming optimization
